@@ -84,6 +84,7 @@ header#header h2 {
 section#resume {
   padding: 85px 0 85px 0;
 }
+
 section#resume .column {
   max-width: 640px;
   margin: 0 auto;
@@ -294,5 +295,21 @@ footer#footer p a {
   header#header h1 {
     font-size: 26px;
     letter-spacing: 3px;
+  }
+  
+  section#resume {
+    padding: 35px 0 35px 0;
+  }
+  
+  section.projects {
+    padding: 45px 15px;
+  }
+  
+  section#contact {
+    padding: 55px 15px;
+  }
+  
+  footer#footer {
+    padding: 35px 0 45px 0;
   }
 }
