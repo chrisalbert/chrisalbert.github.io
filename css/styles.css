@@ -289,6 +289,9 @@ footer#footer p a {
 }
 
 @media (max-width: 600px) {
+	p {
+	  line-height: 1.8;
+	}
   header#header {
   	padding: 35px 0 35px 0;
   }
@@ -298,11 +301,17 @@ footer#footer p a {
   }
   
   section#resume {
-    padding: 35px 0 35px 0;
+    padding: 25px 0 25px 0;
+  }
+  section#resume p {
+  	font-size: 16px;
   }
   
   section.projects {
-    padding: 45px 15px;
+    padding: 35px 15px;
+  }
+  section.projects p {
+  	font-size: 16px;
   }
   
   section#contact {
