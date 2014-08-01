@@ -105,13 +105,14 @@ section#resume a {
 
 section.projects {
   padding: 90px 15px;
+  text-align: center;
 }
 section.projects .column {
   max-width: 640px;
   margin: 0 auto;
 }
 section.projects .hero {
-  margin-bottom: 70px;
+  margin-bottom: 50px;
 }
 section.projects h2 {
   font-size: 39px;
@@ -132,7 +133,6 @@ section.projects p {
   font-size: 18px;
   text-align: left;
 }
-
 section.projects p.projectlink {
   margin-top: 60px;
   line-height: 24px;
@@ -201,10 +201,30 @@ section#datalove a:hover {
   color: #fff;
 }
 
+/* fileee */
+
+section#fileee {
+	background:#FFF;
+}
+section#fileee h2 {
+  color: #4AC84E;
+  font-weight: bolder;
+}
+section#fileee .fileee-end {
+  color: #464646;
+}
+section#fileee a {
+  color: #5AC86E;
+}
+section#fileee a:hover {
+	color:#464646;
+}
+
 /* DRIFT */
 
 section#drift {
-  background: #3DCCA7;
+  /*background: #3DCCA7;*/
+  background:#17B995;
 }
 section#drift h2 {
   color: #fff;
@@ -225,7 +245,7 @@ section#drift a:hover {
 /* STRONGER */
 
 section#stronger {
-  background: #FF6C55;
+  background: #FF5D4A;
 }
 section#stronger h2 {
   color: #fff;
@@ -262,7 +282,7 @@ section#contact .btn {
 }
 section#contact .btn:hover {
   background: #07c2f9;
-  box-shadow: 0 4px 0px #07a5d3;
+  box-shadow: 0 4px 0px #47A1C3;
 }
 section#contact .btn img {
   width: 26px;
@@ -312,6 +332,9 @@ footer#footer p a {
   }
   section.projects p {
   	font-size: 16px;
+  }
+  section.projects .hero {
+    margin-bottom: 50px;
   }
   
   section#contact {
