@@ -60,8 +60,9 @@ p {
 
 header#header {
   text-align: center;
-  background: #f2f2f2;
-  padding: 48px 0 55px 0;
+  background: #fff;
+  padding-top: 100px;
+  padding-bottom: 10px;
 }
 header#header h1 {
   color: #555;
@@ -74,15 +75,24 @@ header#header h1 {
 }
 header#header h2 {
   font-size: 18px;
-  color: #999;
-  margin: 10px 0 0 0;
+  color: #555;
+  margin: 12px 0 0 0;
   font-weight: normal;
+  font-style: italic;
+}
+
+header#header hr {
+	width:154px;
+	height:4px;
+	background-color:#555;
+	border-style:none;
+	margin-top: 24px;
 }
 
 /* RESUME */
 
 section#resume {
-  padding: 85px 0 85px 0;
+  padding: 40px 0 120px 0;
 }
 
 section#resume .column {
@@ -208,7 +218,7 @@ section#fileee {
 }
 section#fileee h2 {
   color: #5AC81E;
-  font-weight: bolder;
+  font-weight: bold;
 }
 section#fileee .fileee-end {
   color: #464646;
@@ -269,6 +279,7 @@ section#contact {
 }
 section#contact h3 {
   font-size: 18px;
+  margin-bottom: 40px;
 }
 section#contact .btn {
   display: inline-block;
@@ -296,7 +307,7 @@ section#contact .btn img {
 footer#footer {
   background: #2b2b2b;
   text-align: center;
-  padding: 65px 0 90px 0;
+  padding: 70px 0;
 }
 footer#footer p {
   font-size: 15px;
@@ -313,7 +324,7 @@ footer#footer p a {
 	  line-height: 1.8;
 	}
   header#header {
-  	padding: 35px 0 35px 0;
+  	padding: 60px 0 10px 0;
   }
   header#header h1 {
     font-size: 26px;
@@ -321,7 +332,7 @@ footer#footer p a {
   }
   
   section#resume {
-    padding: 25px 0 25px 0;
+    padding: 20px 0 40px 0;
   }
   section#resume p {
   	font-size: 16px;
@@ -342,6 +353,6 @@ footer#footer p a {
   }
   
   footer#footer {
-    padding: 35px 0 45px 0;
+    padding: 35px 0;
   }
 }
