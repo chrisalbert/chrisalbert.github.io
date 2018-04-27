@@ -1,50 +1,11 @@
-
+h1, div, p, a {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 /* GENERAL */
 
-img {
-  /* Responsive images (ensure images don't scale beyond their parents) */
-
-  max-width: 100%;
-  /* Part 1: Set a maxium relative to the parent */
-
-  width: auto\9;
-  /* IE7-8 need help adjusting responsive images */
-
-  height: auto;
-  /* Part 2: Scale the height according to the width, otherwise you get stretching */
-
-  vertical-align: middle;
-  border: 0;
-  -ms-interpolation-mode: bicubic;
-}
-#map_canvas img,
-.google-maps img {
-  max-width: none;
-}
-a {
-  text-decoration: none;
-  color: ;
-}
-a:hover,
-a:visited {
-  color: ;
-}
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  margin-top: 0;
-  font-weight: normal;
-}
-.left {
-  float: left;
-}
-.right {
-  float: right;
-}
 body {
   font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
   margin: 0;
@@ -52,19 +13,23 @@ body {
   color: #999;
   font-weight: normal;
 }
-p {
-  line-height: 1.9;
-}
 
 /* HEADER */
 
-header#header {
+header {
   text-align: center;
   background: #fff;
-  padding-top: 100px;
-  padding-bottom: 10px;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-header#header h1 {
+
+.container {
+  padding-bottom: 5%;
+}
+
+.title {
   color: #555;
   letter-spacing: 6px;
   margin: 0;
@@ -73,286 +38,37 @@ header#header h1 {
   font-size: 45px;
   font-weight: 900;
 }
-header#header h2 {
+
+.subtitle-container {
+  display: flex;
+  justify-content: center;
+}
+
+.subtitle {
   font-size: 18px;
   color: #555;
-  margin: 12px 0 0 0;
-  font-weight: normal;
+  font-weight: 400;
   font-style: italic;
+  padding-bottom: 16px;
+  padding-top: 8px;
+  border-bottom: 4px solid #555;
 }
 
-header#header hr {
-	width:154px;
-	height:4px;
-	background-color:#555;
-	border-style:none;
-	margin-top: 24px;
+.contact {
+  padding-top: 16px;
+  color: #999;
+  display: block;
+  cursor: pointer;
+  font-weight: 400;
 }
 
-/* RESUME */
-
-section#resume {
-  padding: 40px 0 120px 0;
-}
-
-section#resume .column {
-  max-width: 640px;
-  margin: 0 auto;
-  padding-left: 15px;
-  padding-right: 15px;
-}
-section#resume p {
-  font-size: 18px;
-  padding-bottom: 25px;
-}
-section#resume a {
-  color: #ccc;
-  border-bottom: 1px dotted #ccc;
-  padding-bottom: 5px;
-}
-
-/* PROJECTS */
-
-section.projects {
-  padding: 90px 15px;
-  text-align: center;
-}
-section.projects .column {
-  max-width: 640px;
-  margin: 0 auto;
-}
-section.projects .hero {
-  margin-bottom: 50px;
-}
-section.projects h2 {
-  font-size: 39px;
-  margin: 0;
-  margin-bottom: 2px;
-  text-align: center;
-  font-weight: lighter;
-  letter-spacing: 1px;
-}
-section.projects h3 {
-  font-size: 18px;
-  font-weight: normal;
-  margin-bottom: 30px;
-  text-align: center;
-  font-style: italic;
-}
-section.projects p {
-  font-size: 18px;
-  text-align: left;
-}
-section.projects p.projectlink {
-  margin-top: 60px;
-  line-height: 24px;
-  text-align: center;
-}
-section.projects p.projectlink img.dribbble {
-  vertical-align: baseline;
-  height: 15px;
-  width: 15px;
-  margin-right: 10px;
-  position: relative;
-  top: 2px;
-}
-section.projects p.projectlink img.arrow {
-  width: 32px;
-  height: 12px;
-  position: relative;
-  -webkit-transition-property: left;
-  -moz-transition-property: left;
-  -o-transition-property: left;
-  transition-property: left;
-  -webkit-transition-duration: 0.2s;
-  -moz-transition-duration: 0.2s;
-  -o-transition-duration: 0.2s;
-  transition-duration: 0.2s;
-  -webkit-transition-timing-function: linear;
-  -moz-transition-timing-function: linear;
-  -o-transition-timing-function: linear;
-  transition-timing-function: linear;
-}
-section.projects p.projectlink:hover img.arrow {
-  position: relative;
-  left: 10px;
-  -webkit-transition-property: left;
-  -moz-transition-property: left;
-  -o-transition-property: left;
-  transition-property: left;
-  -webkit-transition-duration: 0.2s;
-  -moz-transition-duration: 0.2s;
-  -o-transition-duration: 0.2s;
-  transition-duration: 0.2s;
-  -webkit-transition-timing-function: linear;
-  -moz-transition-timing-function: linear;
-  -o-transition-timing-function: linear;
-  transition-timing-function: linear;
-}
-
-/* DATALOVE */
-
-section#datalove {
-  background: #47A1C3;
-}
-section#datalove h2 {
-  color: #fff;
-}
-section#datalove h3 {
-  color: #175173;
-}
-section#datalove p {
-  color: #175173;
-}
-section#datalove a {
-  color: #A7D1E3;
-}
-section#datalove a:hover {
-  color: #fff;
-}
-
-/* fileee */
-
-section#fileee {
-	background:#FFF;
-}
-section#fileee h2 {
-  color: #5AC81E;
-  font-weight: bold;
-}
-section#fileee .fileee-end {
-  color: #464646;
-}
-section#fileee a {
-  color: #5AC81E;
-}
-section#fileee a:hover {
-	color:#464646;
-}
-
-/* DRIFT */
-
-section#drift {
-  /*background: #3DCCA7;*/
-  background:#17B995;
-}
-section#drift h2 {
-  color: #fff;
-}
-section#drift h3 {
-  color: #176C57;
-}
-section#drift p {
-  color: #176C57;
-}
-section#drift a {
-  color: #ADFCF7;
-}
-section#drift a:hover {
-  color: #fff;
-}
-
-/* STRONGER */
-
-section#stronger {
-  background: #FF5D4A;
-}
-section#stronger h2 {
-  color: #fff;
-}
-section#stronger h3 {
-  color: #AC1A15;
-}
-section#stronger p {
-  color: #AC1A15;
-}
-section#stronger a {
-  color: #AC1A15;
-}
-
-/* CONTACT */
-
-section#contact {
-  background: #f9fbfb;
-  text-align: center;
-  padding: 90px 15px;
-}
-section#contact h3 {
-  font-size: 18px;
-  margin-bottom: 40px;
-}
-section#contact .btn {
-  display: inline-block;
-  background: #5ecbeb;
-  border-radius: 0px;
-  font-size: 20px;
-  line-height: 30px;
-  padding: 12px 35px;
-  color: #fff;
-  box-shadow: 0 4px 0px #4bb5d4;
-}
-section#contact .btn:hover {
-  background: #07c2f9;
-  box-shadow: 0 4px 0px #47A1C3;
-}
-section#contact .btn img {
-  width: 26px;
-  margin-right: 15px;
-  vertical-align: top;
-}
-
-
-/* FOOTER */
-
-footer#footer {
-  background: #2b2b2b;
-  text-align: center;
-  padding: 70px 0;
-}
-footer#footer p {
-  font-size: 15px;
-  color: #5e5e5e;
-}
-footer#footer p a {
-  color: #5e5e5e;
-  border-bottom: 1px dotted #5e5e5e;
-  padding-bottom: 3px;
+.contact:hover {
+  color: deepskyblue;
 }
 
 @media (max-width: 600px) {
-	p {
-	  line-height: 1.8;
-	}
-  header#header {
-  	padding: 60px 0 10px 0;
-  }
-  header#header h1 {
+  .title {
     font-size: 26px;
     letter-spacing: 3px;
-  }
-  
-  section#resume {
-    padding: 20px 0 40px 0;
-  }
-  section#resume p {
-  	font-size: 16px;
-  }
-  
-  section.projects {
-    padding: 35px 15px;
-  }
-  section.projects p {
-  	font-size: 16px;
-  }
-  section.projects .hero {
-    margin-bottom: 50px;
-  }
-  
-  section#contact {
-    padding: 55px 15px;
-  }
-  
-  footer#footer {
-    padding: 35px 0;
   }
 }
